@@ -1,1 +1,74 @@
-# bucin
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maafkan Aku</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff69b4;
+            animation: fadeIn 1s;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        #messageInput {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .heart {
+            position: absolute;
+            font-size: 24px;
+            animation: float 3s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Maafin aku ya sayangku ❤️❤️</h1>
+    <h1>Aku sangat kangen canda tawamu sleppcall ama kamu. Baikan lagi ya sayangku, kita lanjut lagi ya hubungan ini bareng-bareng sayangku ❤️.</h1>
+    
+    <input type="text" id="messageInput" placeholder="Tulis pesan di sini...">
+    <button onclick="sendMessage()">Kirim Pesan</button>
+
+        <script>
+        function sendMessage() {
+            alert("Pesan telah dikirim! Aku berharap kita bisa baikan segera ya sayangkuu❤️😘");
+        }
+    </script>
+</body>
+</html>
